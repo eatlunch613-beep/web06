@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <!-- 網頁編碼設定 -->
+    <meta charset="UTF-8">
+
+    <!-- 響應式網頁設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 網頁標題 -->
+    <title>個人介紹網站</title>
+
+    <style>
+        /* 全域設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 網頁主體 */
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* 主要容器 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Hero 區塊 */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        /* 個人照片 */
+        .hero img {
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        /* 共用區塊 */
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* 表格設定 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* 表單設定 */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* 圖片超連結效果 */
+        .link-image img {
+            width: 120px;
+            transition: 0.3s;
+        }
+
+        .link-image img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 網頁主要容器 -->
+    <div class="container">
+
+        <!-- 個人介紹區 -->
+        <div class="hero">
+
+            <!-- h1 最大標題 -->
+            <h1>我是王小明</h1>
+
+            <!-- 個人照片 -->
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43b?w=800"
+                alt="個人照片">
+
+            <!-- p 段落文字 -->
+            <p>前端工程師｜UI 設計愛好者｜網頁開發學習者</p>
+
+            <!-- br 換行 -->
+            <br>
+
+            <!--
+                a 超連結
+                使用 img 圖片作為可點擊連結
+            -->
+            <a href="https://github.com" target="_blank" class="link-image">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="GitHub">
+
+            </a>
+
+            <p>點擊圖片前往 GitHub</p>
+
+        </div>
+
+        <!-- 標題展示區 -->
+        <div class="section">
+
+            <!-- h2 -->
+            <h2>我的技能</h2>
+            <p>熟悉 HTML、CSS、JavaScript。</p>
+
+            <!-- h3 -->
+            <h3>前端開發</h3>
+            <p>能完成 RWD 響應式網站。</p>
+
+            <!-- h4 -->
+            <h4>UI 設計</h4>
+            <p>具備基礎 Figma 設計能力。</p>
+
+            <!-- h5 -->
+            <h5>學習目標</h5>
+            <p>朝全端工程師發展。</p>
+
+            <!-- h6 -->
+            <h6>持續精進</h6>
+            <p>每天持續練習程式設計。</p>
+
+        </div>
+
+        <!-- 作品展示區 -->
+        <div class="section">
+
+            <h2>作品集</h2>
+
+            <!-- Unsplash 圖片 -->
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+                alt="作品展示"
+                style="width:100%; border-radius:10px;">
+
+        </div>
+
+        <!-- 表格區 -->
+        <div class="section">
+
+            <h2>課程時間表</h2>
+
+            <table>
+
+                <!-- 第一列 -->
+                <tr>
+
+                    <!-- rowspan 合併兩列 -->
+                    <th rowspan="2">日期</th>
+
+                    <!-- colspan 合併兩欄 -->
+                    <th colspan="2">課程內容</th>
+
+                </tr>
+
+                <!-- 第二列 -->
+                <tr>
+                    <th>上午</th>
+                    <th>下午</th>
+                </tr>
+
+                <!-- 第三列 -->
+                <tr>
+                    <td>星期一</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+
+                <!-- 第四列 -->
+                <tr>
+
+                    <td>星期二</td>
+
+                    <!-- 合併兩欄 -->
+                    <td colspan="2">
+                        JavaScript 專題實作
+                    </td>
+
+                </tr>
+
+                <!-- 第五列 -->
+                <tr>
+                    <td>星期三</td>
+                    <td>Bootstrap</td>
+                    <td>RWD 設計</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- 表單區 -->
+        <div class="section">
+
+            <h2>聯絡我</h2>
+
+            <form action="#">
+
+                <!-- 姓名 -->
+                <label>姓名</label>
+                <input type="text" placeholder="請輸入姓名">
+
+                <!-- Email -->
+                <label>Email</label>
+                <input type="email" placeholder="請輸入 Email">
+
+                <!-- 主旨 -->
+                <label>主旨</label>
+                <input type="text" placeholder="請輸入主旨">
+
+                <!-- 留言 -->
+                <label>留言內容</label>
+                <textarea rows="5"
+                    placeholder="請輸入留言內容"></textarea>
+
+                <!-- 送出按鈕 -->
+                <button type="submit">
+                    送出表單
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
