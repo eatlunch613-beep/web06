@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <!-- 基本編碼 -->
+    <meta charset="UTF-8">
+
+    <!-- RWD 響應式設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO：網站描述 -->
+    <meta name="description"
+        content="王小明個人網站，展示前端技能、作品集、課程規劃與聯絡方式。">
+
+    <!-- SEO：關鍵字 -->
+    <meta name="keywords"
+        content="前端工程師,HTML,CSS,JavaScript,作品集,個人網站">
+
+    <!-- 作者 -->
+    <meta name="author"
+        content="王小明">
+
+    <!-- ⭐ Open Graph（OG）標籤：社群分享用 -->
+    <meta property="og:title" content="王小明的個人網站">
+    <meta property="og:description" content="前端工程師作品集與技能展示網站">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1500648767791-00dcc994a43b?w=800">
+
+    <title>王小明的個人網站</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header,
+        section,
+        footer {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .profile {
+            width: 220px;
+            border-radius: 20px;
+            margin: 15px 0;
+        }
+
+        nav img {
+            width: 90px;
+            transition: .3s;
+        }
+
+        nav img:hover {
+            transform: scale(1.1);
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 頁首 -->
+    <header>
+
+        <h1>王小明的個人網站</h1>
+
+        <img class="profile"
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43b?w=800"
+            alt="個人照片">
+
+        <p>
+            前端工程師｜UI設計｜持續學習者
+        </p>
+
+        <br>
+
+        <!-- GitHub 連結（img 點擊） -->
+        <nav>
+            <a href="https://github.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                    alt="GitHub">
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+
+        <!-- 技能 -->
+        <section>
+            <h2>我的技能</h2>
+
+            <h3>前端開發</h3>
+            <p>HTML / CSS / JavaScript</p>
+
+            <h4>切版能力</h4>
+            <p>RWD 響應式設計</p>
+
+            <h5>學習目標</h5>
+            <p>React / Vue</p>
+
+            <h6>持續進步</h6>
+            <p>每天寫程式</p>
+        </section>
+
+        <!-- 作品 -->
+        <section>
+            <h2>作品展示</h2>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+                    alt="作品圖片">
+
+                <figcaption>
+                    前端作品展示頁面
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- 表格 -->
+        <section>
+            <h2>課程時間表</h2>
+
+            <table>
+
+                <tr>
+                    <th rowspan="2">日期</th>
+                    <th colspan="2">課程</th>
+                </tr>
+
+                <tr>
+                    <th>上午</th>
+                    <th>下午</th>
+                </tr>
+
+                <tr>
+                    <td>星期一</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+
+                <tr>
+                    <td>星期二</td>
+                    <td colspan="2">JavaScript 專題</td>
+                </tr>
+
+                <tr>
+                    <td>星期三</td>
+                    <td>Bootstrap</td>
+                    <td>RWD</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <!-- 聯絡表單 -->
+        <section>
+            <h2>聯絡我</h2>
+
+            <form>
+
+                <label>姓名</label>
+                <input type="text" placeholder="請輸入姓名">
+
+                <label>Email</label>
+                <input type="email" placeholder="請輸入 Email">
+
+                <label>主旨</label>
+                <input type="text" placeholder="請輸入主旨">
+
+                <label>內容</label>
+                <textarea rows="5" placeholder="請輸入內容"></textarea>
+
+                <button type="submit">送出</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2026 王小明 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
